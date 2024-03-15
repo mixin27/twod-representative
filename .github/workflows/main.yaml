@@ -1,0 +1,20 @@
+name: kbw_math_abacus
+
+concurrency:
+  group: $-$
+  cancel-in-progress: true
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  analyze:
+    uses: ./.github/workflows/flutter_package.yaml
+    with:
+      flutter_channel: stable

@@ -11,6 +11,16 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.6
 
+  # firebase
+  firebase_core: ^2.27.1
+  firebase_storage: ^11.6.10
+  firebase_auth: ^4.17.9
+  cloud_firestore: ^4.15.9
+  firebase_crashlytics: ^3.4.19
+  firebase_analytics: ^10.8.10
+  firebase_performance: ^0.9.3+18
+  recaptcha_enterprise_flutter: ^18.4.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -34,6 +34,8 @@ extension StringX on String {
   }
 
   String get hardcoded => this;
+
+  DateTime toDateTime() => DateTime.tryParse(this) ?? DateTime.now();
 }
 
 extension DateTimeX on DateTime {

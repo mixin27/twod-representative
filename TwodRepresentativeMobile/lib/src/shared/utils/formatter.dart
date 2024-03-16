@@ -30,3 +30,8 @@ NumberFormat currencyFormatter(CurrencyFormatterRef ref, {String? locale}) {
   /// * If `en_US` is hardcoded to ensure all prices show with a dollar sign ($)
   return NumberFormat.currency(locale: locale);
 }
+
+String dateStringFromDate(DateTime date) {
+  final dateStr = DateFormat('hh:mm a').format(date);
+  return dateStr;
+}

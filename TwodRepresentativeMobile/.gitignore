@@ -46,6 +46,7 @@ app.*.map.json
 firebase-exports
 
 # Environment variables
+.env
 .env.dev
 .env.stg
 .env.prod

@@ -1,19 +1,16 @@
 {
   "name": "twod_representative",
   "version": "1.0.0",
-  "description": "Twod (2D) Representative mobile application using Flutter.",
+  "description": "",
   "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
     "prepare": "husky",
-    "format": "dart format lib . && dart run import_sorter:main",
-    "gen": "dart run build_runner build -d",
-    "gen:locale": "dart run easy_localization:generate -S assets/translations -O lib/src/l10n -o locale_keys.g.dart -f keys",
+    "format": "cd TwodRepresentativeMobile && dart format lib . && dart run import_sorter:main",
+    "gen": "cd TwodRepresentativeMobile && dart run build_runner build -d",
+    "gen:locale": "cd TwodRepresentativeMobile && dart run easy_localization:generate -S assets/translations -O lib/src/l10n -o locale_keys.g.dart -f keys",
     "gen:once": "npm run gen && npm run gen:locale",
-    "gen:watch": "dart run build_runner watch -d",
-    "clean": "flutter clean && flutter pub get",
+    "gen:watch": "cd TwodRepresentativeMobile && dart run build_runner watch -d",
+    "clean": "cd TwodRepresentativeMobile && flutter clean && flutter pub get",
     "commit": "cz-customizable",
     "add:commit": "git add . && cz-customizable",
     "fac": "npm run format && git add . && cz-customizable"
@@ -25,16 +22,16 @@
   ],
   "author": "Kyaw Zayar Tun",
   "license": "MIT",
-  "dependencies": {
-    "commitlint": "^19.2.0",
-    "commitlint-config-gitmoji": "^2.3.1",
-    "cz-customizable": "^7.0.0",
-    "husky": "^9.0.11"
-  },
   "commit": "./node_modules/cz-customizable/standalone.js",
   "config": {
     "commitizen": {
       "path": "cz-customizable"
     }
+  },
+  "dependencies": {
+    "commitlint": "^19.2.0",
+    "commitlint-config-gitmoji": "^2.3.1",
+    "cz-customizable": "^7.0.0",
+    "husky": "^9.0.11"
   }
 }

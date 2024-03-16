@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twod Representative</title>
+  </head>
+  <body>
+    <h1 id="twod"></h1>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const twod = document.getElementById('twod');
+
+      const socket = io();
+
+      socket.on("twod_live", (arg) => {
+        console.log(arg);
+        twod.innerText = arg.live.twod;
+      });
+    </script>
+  </body>
+</html>

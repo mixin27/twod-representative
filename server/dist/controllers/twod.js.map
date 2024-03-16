@@ -1,0 +1,1 @@
+{"version":3,"file":"twod.js","sourceRoot":"","sources":["../../src/controllers/twod.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;AACA,kDAA0B;AASnB,MAAM,IAAI,GAAmB,CAAO,GAAG,EAAE,GAAG,EAAE,EAAE;IACrD,MAAM,EAAE,IAAI,EAAE,GAAG,MAAM,eAAK,CAAC,GAAG,CAAC,kCAAkC,CAAC,CAAC;IAErE,OAAO,GAAG,CAAC,MAAM,CAAC,GAAG,CAAC,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC;AACpC,CAAC,CAAA,CAAC;AAJW,QAAA,IAAI,QAIf"}

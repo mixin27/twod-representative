@@ -19,3 +19,4 @@ const live = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     return res.status(200).json(data);
 });
 exports.live = live;
+//# sourceMappingURL=twod.js.map

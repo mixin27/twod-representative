@@ -5,3 +5,4 @@ const express_1 = require("express");
 const router = (0, express_1.Router)();
 router.get("/live", twod_1.live);
 exports.default = router;
+//# sourceMappingURL=twod.js.map

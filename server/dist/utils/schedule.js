@@ -28,3 +28,4 @@ node_cron_1.default.schedule("*/5 0-2 12 * * Mon,Tue,Wed,Thu,Fri", () => __await
 node_cron_1.default.schedule("*/5 0-31 16,15 * * Mon,Tue,Wed,Thu,Fri", () => __awaiter(void 0, void 0, void 0, function* () {
     yield fetchTwodLiveData();
 }));
+//# sourceMappingURL=schedule.js.map

@@ -33,3 +33,4 @@ app.use(errors_1.errorHandler);
 server.listen(variables_1.PORT, () => {
     console.log(`🚀 Twod Representative API server is listening on port ${variables_1.PORT}`);
 });
+//# sourceMappingURL=index.js.map

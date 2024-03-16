@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "npm": "10.x"
+  },
   "scripts": {
     "dev": "tsnd --respawn -r tsconfig-paths/register --pretty --transpile-only ./src/index.ts",
-    "build": "rimraf dist && tsc && tsc-alias"
+    "build": "rimraf dist && tsc && tsc-alias",
+    "postinstall": "npm run build",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",

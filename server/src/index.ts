@@ -37,6 +37,6 @@ io.on("connection", (socket) => {
 
 app.use(errorHandler);
 
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`🚀 Twod Representative API server is listening on port ${PORT}`);
 });
